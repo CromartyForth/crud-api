@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using System.IO;
 
 namespace Glossary.Controllers
 
@@ -51,9 +52,31 @@ namespace Glossary.Controllers
             {
 
                 return Ok(glossaryItem);
-                
+
             }
 
+        }
+
+        [HttpPost]
+        public ActionResult Post(GlossaryItem glossaryItem)
+
+        {
+            var existingGlossaryItem = Glossary.Find(item => item.Term.Equals(glossaryItem.Term, StringComparison.InvariantCultureIgnoreCase));
+
+            if(existingGlossaryItem != null)
+            {
+                return Conflict("Cannot create the term because it already exists.");
+            }
+            
+            else
+
+            {
+                Glossary.Add(glossaryItem);
+
+                var resourceUrl = Path.Combine(Request.Path.ToString(), Uri.EscapeUriString(glossaryItem.Term));
+
+                return Created(resourceUrl, glossaryItem);
+            }
         }
     }
 }
