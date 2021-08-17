@@ -1,7 +1,7 @@
-namespace CrudItem
+namespace Glossary
 
 {
-    public class CrudItem
+    public class GlossaryItem
     {
         public string Term { get; set; }
 
