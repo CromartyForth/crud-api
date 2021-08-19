@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using System.IO;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Glossary.Controllers
 
@@ -58,6 +59,7 @@ namespace Glossary.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public ActionResult Post(GlossaryItem glossaryItem)
 
         {
@@ -80,6 +82,7 @@ namespace Glossary.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public ActionResult Put(GlossaryItem glossaryItem)
 
         {
@@ -101,6 +104,7 @@ namespace Glossary.Controllers
 
         [HttpDelete]
         [Route("{term}")]
+        [Authorize]
 
         public ActionResult Delete(string term)
 

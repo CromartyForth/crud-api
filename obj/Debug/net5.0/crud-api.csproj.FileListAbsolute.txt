@@ -27,3 +27,10 @@ I:\SOC\Personal\crud-api\obj\Debug\net5.0\crud-api.dll
 I:\SOC\Personal\crud-api\obj\Debug\net5.0\ref\crud-api.dll
 I:\SOC\Personal\crud-api\obj\Debug\net5.0\crud-api.pdb
 I:\SOC\Personal\crud-api\obj\Debug\net5.0\crud-api.genruntimeconfig.cache
+I:\SOC\Personal\crud-api\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+I:\SOC\Personal\crud-api\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+I:\SOC\Personal\crud-api\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+I:\SOC\Personal\crud-api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+I:\SOC\Personal\crud-api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+I:\SOC\Personal\crud-api\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+I:\SOC\Personal\crud-api\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
